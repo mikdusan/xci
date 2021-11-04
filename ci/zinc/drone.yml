@@ -13,19 +13,24 @@ steps:
   image: ci/debian-amd64:11.1-1
   commands:
   - echo "pretend to do something"
-  - ls -al
+  - sleep 10
+  - pwd
+  - uname -a
 
-##  ---
-##  kind: pipeline
-##  type: exec
-##  name: x86_64-freebsd
-##  platform:
-##    os: freebsd
-##    arch: amd64
-##  workspace:
-##    path: /workspace
-##  
-##  steps:
-##  - name: build-test-package
-##    commands:
-##    - echo "pretend to do something"
+---
+kind: pipeline
+type: exec
+name: x86_64-freebsd
+platform:
+  os: freebsd
+  arch: amd64
+workspace:
+  path: /workspace
+
+steps:
+- name: build
+  commands:
+  - echo "pretend to do something"
+  - sleep 10
+  - pwd
+  - uname -a
