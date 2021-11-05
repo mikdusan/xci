@@ -19,7 +19,7 @@ steps:
 
 ---
 kind: pipeline
-type: exec
+type: vm
 name: x86_64-freebsd
 platform:
   os: freebsd
