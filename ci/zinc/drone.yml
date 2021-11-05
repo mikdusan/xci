@@ -13,7 +13,7 @@ steps:
   image: ci/debian-amd64:11.1-1
   commands:
   - echo "pretend to do something"
-  - sleep 10
+  - sleep 5
   - pwd
   - uname -a
 
@@ -31,6 +31,7 @@ steps:
 - name: build
   commands:
   - echo "pretend to do something"
-  - sleep 10
+  - sleep 5
   - pwd
   - uname -a
+  - env | sort
