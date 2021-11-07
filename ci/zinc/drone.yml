@@ -17,7 +17,7 @@ steps:
   - pwd
   - uname -a
   - echo "wait for kill"
-  - sleep 900
+  - sleep 60
 
 ---
 kind: pipeline
@@ -38,4 +38,4 @@ steps:
   - uname -a
   - env | sort
   - echo "wait for kill"
-  - sleep 900
+  - sleep 60
