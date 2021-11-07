@@ -18,9 +18,9 @@ This is a test.
     1. sub
 
     ```bash
-    one
-    two
-    three
+one
+two
+three
     ```
 
 1. item
