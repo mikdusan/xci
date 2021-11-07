@@ -16,11 +16,11 @@ This is a test.
     1. sub
     1. sub
     1. sub
-```bash
-one
-two
-three
-```
+        ```bash
+        one
+        two
+        three
+        ```
 1. item
     1. sub
     1. sub
