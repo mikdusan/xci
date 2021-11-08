@@ -1,18 +1,18 @@
----
-kind: pipeline
-type: docker
-name: x86_64-linux
-workspace:
-  path: /workspace
-
-steps:
-- name: build
-  image: ci/debian-amd64:11.1-1
-  commands:
-  - echo "pretend to do something"
-  - sleep 5
-  - pwd
-  - uname -a
+# ---
+# kind: pipeline
+# type: docker
+# name: x86_64-linux
+# workspace:
+#   path: /workspace
+# 
+# steps:
+# - name: build
+#   image: ci/debian-amd64:11.1-1
+#   commands:
+#   - echo "pretend to do something"
+#   - sleep 5
+#   - pwd
+#   - uname -a
 
 ---
 kind: pipeline
@@ -25,5 +25,11 @@ workspace:
 steps:
 - name: build
   commands:
-  - echo "build (pipeline 0)"
+  - echo "build"
+  - sleep 60
+
+steps:
+- name: build-2
+  commands:
+  - echo "build"
   - sleep 60
