@@ -30,8 +30,40 @@ workspace:
 steps:
 - name: build
   commands:
-  - echo "pretend to do something"
-  - sleep 5
-  - pwd
-  - uname -a
+  - echo "build (pipeline 0)"
   - env | sort
+  - sleep 60
+
+---
+kind: pipeline
+type: vm
+name: x86_64-freebsd
+platform:
+  os: freebsd
+  arch: amd64
+workspace:
+  path: /workspace
+
+steps:
+- name: build
+  commands:
+  - echo "build (pipeline 1)"
+  - env | sort
+  - sleep 60
+
+---
+kind: pipeline
+type: vm
+name: x86_64-freebsd
+platform:
+  os: freebsd
+  arch: amd64
+workspace:
+  path: /workspace
+
+steps:
+- name: build
+  commands:
+  - echo "build (pipeline 2)"
+  - env | sort
+  - sleep 60
