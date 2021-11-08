@@ -24,6 +24,7 @@ name: x86_64-freebsd
 platform:
   os: freebsd
   arch: amd64
+image: freebsd-amd64:13.0-0
 workspace:
   path: /workspace
 
@@ -31,5 +32,4 @@ steps:
 - name: build
   commands:
   - echo "build (pipeline 0)"
-  - env | sort
   - sleep 60
