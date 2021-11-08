@@ -13,42 +13,42 @@ steps:
   - pwd
   - uname -a
 
----
-kind: pipeline
-type: vm
-name: x86_64-freebsd
-image: freebsd-amd64:13.0-0
-workspace:
-  path: /workspace
-
-steps:
-- name: build
-  commands:
-  - echo "build"
-  - sleep 60
-
-- name: build-2
-  commands:
-  - echo "build"
-  - sleep 60
----
-kind: pipeline
-type: vm
-name: x86_64-freebsd-2
-image: freebsd-amd64:13.0-0
-workspace:
-  path: /workspace
-
-steps:
-- name: build
-  commands:
-  - echo "build"
-  - sleep 60
-
-- name: build-2
-  commands:
-  - echo "build"
-  - sleep 60
+#---
+#kind: pipeline
+#type: vm
+#name: x86_64-freebsd
+#image: freebsd-amd64:13.0-0
+#workspace:
+#  path: /workspace
+#
+#steps:
+#- name: build
+#  commands:
+#  - echo "build"
+#  - sleep 60
+#
+#- name: build-2
+#  commands:
+#  - echo "build"
+#  - sleep 60
+#---
+#kind: pipeline
+#type: vm
+#name: x86_64-freebsd-2
+#image: freebsd-amd64:13.0-0
+#workspace:
+#  path: /workspace
+#
+#steps:
+#- name: build
+#  commands:
+#  - echo "build"
+#  - sleep 60
+#
+#- name: build-2
+#  commands:
+#  - echo "build"
+#  - sleep 60
 ---
 kind: pipeline
 type: vm
