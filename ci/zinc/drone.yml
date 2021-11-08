@@ -14,7 +14,7 @@
 #   - pwd
 #   - uname -a
 
----
+#---
 kind: pipeline
 type: vm
 name: x86_64-freebsd
