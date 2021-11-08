@@ -27,7 +27,6 @@ steps:
   - echo "build"
   - sleep 60
 
-steps:
 - name: build-2
   commands:
   - echo "build"
@@ -46,7 +45,6 @@ steps:
   - echo "build"
   - sleep 60
 
-steps:
 - name: build-2
   commands:
   - echo "build"
@@ -65,7 +63,6 @@ steps:
   - echo "build"
   - sleep 60
 
-steps:
 - name: build-2
   commands:
   - echo "build"
