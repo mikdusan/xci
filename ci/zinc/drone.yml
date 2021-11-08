@@ -37,7 +37,7 @@ steps:
 ---
 kind: pipeline
 type: vm
-name: x86_64-freebsd
+name: x86_64-freebsd-1
 platform:
   os: freebsd
   arch: amd64
@@ -54,7 +54,7 @@ steps:
 ---
 kind: pipeline
 type: vm
-name: x86_64-freebsd
+name: x86_64-freebsd-2
 platform:
   os: freebsd
   arch: amd64
