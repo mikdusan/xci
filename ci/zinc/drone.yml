@@ -62,8 +62,3 @@ steps:
   commands:
   - echo "build"
   - sleep 60
-
-- name: build-2
-  commands:
-  - echo "build"
-  - sleep 60
