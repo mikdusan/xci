@@ -17,7 +17,7 @@
 kind: pipeline
 type: vm
 name: x86_64-freebsd
-image: freebsd-amd64:13.0-1
+image: ci/freebsd-amd64:13.0-1
 workspace:
   path: /workspace
 
