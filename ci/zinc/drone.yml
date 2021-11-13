@@ -21,4 +21,4 @@ steps:
 - name: build
   commands:
   - echo "build"
-  - sleep 30
+  - false
