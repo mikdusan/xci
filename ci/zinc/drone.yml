@@ -21,21 +21,19 @@ steps:
 - name: build
   commands:
   - true
-steps:
 - name: fail
   commands:
   - false
-# ---
-# kind: pipeline
-# type: vm
-# name: x86_64-freebsd-2
-# image: ci/freebsd-amd64:13.0-0
+#---
+#kind: pipeline
+#type: vm
+#name: x86_64-freebsd-2
+#image: ci/freebsd-amd64:13.0-0
 #
-# steps:
-# - name: build
-#   commands:
-#   - true
-# steps:
-# - name: fail
-#   commands:
-#   - false
+#steps:
+#- name: build
+#  commands:
+#  - true
+#- name: fail
+#  commands:
+#  - false
