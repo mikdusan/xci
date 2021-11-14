@@ -14,7 +14,7 @@
 #   ---
 kind: pipeline
 type: vm
-name: x86_64-freebsd
+name: x86_64-freebsd-1
 image: ci/freebsd-amd64:13.0-0
 
 steps:
@@ -25,17 +25,17 @@ steps:
 - name: fail
   commands:
   - false
----
-kind: pipeline
-type: vm
-name: x86_64-openbsd
-image: ci/openbsd-amd64:7.0-0
-
-steps:
-- name: build
-  commands:
-  - true
-steps:
-- name: fail
-  commands:
-  - false
+# ---
+# kind: pipeline
+# type: vm
+# name: x86_64-freebsd-2
+# image: ci/freebsd-amd64:13.0-0
+#
+# steps:
+# - name: build
+#   commands:
+#   - true
+# steps:
+# - name: fail
+#   commands:
+#   - false
