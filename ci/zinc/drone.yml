@@ -29,20 +29,18 @@ image: ci/freebsd-amd64:13.0-0
 
 steps:
 - name: build
-  depends_on:
-  - clone
   commands:
   - sleep 30
   - true
 - name: two
   depends_on:
-  - clone
+  - build
   commands:
   - sleep 15
   - true
 - name: three
   depends_on:
-  - clone
+  - build
   commands:
   - sleep 45
   - true
