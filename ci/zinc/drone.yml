@@ -20,12 +20,16 @@ image: ci/freebsd-amd64:13.0-0
 steps:
 - name: build
   commands:
-  - sleep 10
+  - sleep 30
   - true
-- name: fail
+- name: two
   commands:
-  - sleep 5
-  - false
+  - sleep 15
+  - true
+- name: three
+  commands:
+  - sleep 45
+  - true
 
 # ---
 # kind: pipeline
