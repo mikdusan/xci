@@ -30,19 +30,28 @@ image: ci/freebsd-amd64:13.0-0
 steps:
 - name: build
   commands:
-  - sleep 30
+  - sleep 5
   - true
+
 - name: two
   depends_on:
   - build
   commands:
   - sleep 15
   - true
+
 - name: three
   depends_on:
   - build
   commands:
-  - sleep 45
+  - sleep 15
+  - true
+
+- name: four
+  depends_on:
+  - build
+  commands:
+  - sleep 15
   - true
 
 # ---
