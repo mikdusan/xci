@@ -43,6 +43,7 @@ steps:
 - name: two
   depends_on:
   - build
+  - four
   commands:
   - sleep 15
 
