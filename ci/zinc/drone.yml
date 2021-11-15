@@ -42,19 +42,19 @@ steps:
 
 - name: two
   depends_on:
-  - build
+  - clone
   commands:
   - sleep 15
 
 - name: three
   depends_on:
-  - build
+  - clone
   commands:
   - sleep 15
 
 - name: four
   depends_on:
-  - build
+  - clone
   commands:
   - sleep 15
 
