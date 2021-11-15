@@ -41,14 +41,21 @@ steps:
   - sleep 5
 
 - name: two
+  depends_on:
+  - build
   commands:
   - sleep 15
 
 - name: three
+  depends_on:
+  - two
+  - four
   commands:
   - sleep 15
 
 - name: four
+  depends_on:
+  - build
   commands:
   - sleep 15
 
