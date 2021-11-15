@@ -21,8 +21,7 @@
 #   image: ci/debian-amd64:11.1-1
 #   commands:
 #   - sleep 10
-
----
+#---
 kind: pipeline
 type: vm
 name: x86_64-freebsd-1
