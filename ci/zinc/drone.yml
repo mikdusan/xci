@@ -7,11 +7,17 @@ steps:
   image: ci/debian-amd64:11.1-1
   commands:
   - sleep 20
+
 - name: two
+  depends_on:
+  - build
   image: ci/debian-amd64:11.1-1
   commands:
   - sleep 15
+
 - name: three
+  depends_on:
+  - build
   image: ci/debian-amd64:11.1-1
   commands:
   - sleep 10
