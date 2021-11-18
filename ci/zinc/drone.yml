@@ -65,12 +65,14 @@ name: build-freebsd-x86_64
 
 steps:
 - name: build
+  image: ci/debian-amd64:11.1-1
   commands:
   - sleep 5
 
 - name: two
   depends_on:
   - build
+  image: ci/debian-amd64:11.1-1
   commands:
   - sleep 5
 
@@ -78,12 +80,14 @@ steps:
   depends_on:
   - two
   - four
+  image: ci/debian-amd64:11.1-1
   commands:
   - sleep 5
 
 - name: four
   depends_on:
   - build
+  image: ci/debian-amd64:11.1-1
   commands:
   - sleep 5
 
