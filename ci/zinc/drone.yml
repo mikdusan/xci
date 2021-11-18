@@ -60,7 +60,7 @@
 #  - sleep 15
 #---
 kind: pipeline
-type: qemu
+type: docker
 name: build-freebsd-x86_64
 
 steps:
