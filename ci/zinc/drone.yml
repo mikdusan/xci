@@ -79,7 +79,6 @@ steps:
 - name: three
   depends_on:
   - two
-  - four
   image: ci/debian-amd64:11.1-1
   commands:
   - sleep 5
@@ -87,6 +86,7 @@ steps:
 - name: four
   depends_on:
   - build
+  - two
   image: ci/debian-amd64:11.1-1
   commands:
   - sleep 5
